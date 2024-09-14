@@ -30,7 +30,7 @@ void playGame() {
 
             //mau bet di angka berapa
             do {
-                cout << "Pasan di angka berapa? (antara 2-12): "; 
+                cout << "Pasang di angka berapa? (antara 2-12): "; 
                 cin >> tebakan;
 
                 if (tebakan < 2 || tebakan > 12) {
@@ -69,13 +69,13 @@ void playGame() {
 int main() { 
     //masukin angka ke randomizer
     srand(static_cast<unsigned int>(time(0))); 
-    char playAgain;
+    char mainLagi;
 
     do {
         playGame();
         cout << "Judi lagi? (y/n): ";
-        cin >> playAgain;
-    } while (playAgain == 'y' || playAgain == 'Y');
+        cin >> mainLagi;
+    } while (mainLagi == 'y' || mainLagi == 'Y');
 
     cout << "Jangan judi ya ges ya" << endl;
     return 0;
